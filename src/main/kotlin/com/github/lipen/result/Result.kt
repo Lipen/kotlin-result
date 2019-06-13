@@ -6,12 +6,12 @@ import kotlin.contracts.contract
 sealed class Result<out V, out E : Exception> {
     abstract fun get(): V
 
-    data class Success<out V>(val value: V) : Result<V, Nothing>() {
+    data class Success<out V> internal constructor(val value: V) : Result<V, Nothing>() {
         override fun get(): V = value
         override fun toString(): String = "Success($value)"
     }
 
-    data class Failure<out E : Exception>(val error: E) : Result<Nothing, E>() {
+    data class Failure<out E : Exception> internal constructor(val error: E) : Result<Nothing, E>() {
         override fun get(): Nothing = throw error
         override fun toString(): String = "Failure($error)"
     }
