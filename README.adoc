@@ -1,0 +1,5 @@
+= Result
+
+image:https://jitpack.io/v/Lipen/kotlin-result.svg["JitPack", link="https://jitpack.io/#Lipen/kotlin-result"]
+image:https://hitsofcode.com/github/Lipen/kotlin-result["Hits-of-Code", link="https://hitsofcode.com/view/github/Lipen/kotlin-result"]
+image:https://api.codacy.com/project/badge/Grade/98d30a18193a4870801fbb4772910fba["Codacy code quality", link="https://www.codacy.com/app/Lipen/kotlin-result"]
